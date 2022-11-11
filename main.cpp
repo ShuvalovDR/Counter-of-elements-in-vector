@@ -37,6 +37,10 @@ std :: vector<int> counter_of_elements(std :: vector <int> v_sort){ //функц
             counter = 1;
         }
     }
+    int n = v_sort.size();
+    if (v_sort.at(n - 1) != v_sort.at(n - 2)){
+        kolvo.push_back(1);
+    }
     return kolvo;
 }
 
